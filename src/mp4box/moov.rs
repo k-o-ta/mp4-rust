@@ -71,8 +71,8 @@ impl<R: Read + Seek> ReadBox<&mut R> for MoovBox {
                     mvex = Some(MvexBox::read_box(reader, s)?);
                 }
                 BoxType::TrakBox => {
-                    let trak = TrakBox::read_box(reader, s)?;
-                    traks.push(trak);
+                    // let trak = TrakBox::read_box(reader, s)?;
+                    // traks.push(trak);
                 }
                 BoxType::UdtaBox => {
                     // XXX warn!()
